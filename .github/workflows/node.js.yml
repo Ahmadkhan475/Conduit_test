@@ -22,6 +22,6 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
     - run: npm install
-    - run: npm install pm2@latest -g
+    - run: sudo npm install pm2@latest -g
     - run: cd /home/ubuntu/reactjs/_work/myproject/myproject
     - run: pm2 start --name myproject -- start
