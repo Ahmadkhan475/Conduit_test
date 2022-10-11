@@ -23,6 +23,6 @@ jobs:
       uses: actions/setup-node@v3
     - run: npm install
     - run: sudo npm install pm2@latest -g
-    - run: cd /home/ubuntu/reactjs/_work/myproject/myproject
+    - run: cd /home/ubuntu/reactjs/_work/myproject
     - run: pwd
     - run: sudo pm2 start --name myproject -- start
