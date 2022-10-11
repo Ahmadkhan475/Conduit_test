@@ -25,4 +25,5 @@ jobs:
     - run: pm2 update
     - run: sudo npm install pm2@latest -g
     - run: cd /home/ubuntu/reactjs/_work/myproject/myproject
+    - run: pm2 init simple
     - run: sudo pm2 start --name myproject -- start
